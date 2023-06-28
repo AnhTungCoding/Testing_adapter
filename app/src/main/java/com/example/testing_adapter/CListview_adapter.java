@@ -34,8 +34,11 @@ public class CListview_adapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        //ánh xạ layout con
         LayoutInflater layoutInflater = activity.getLayoutInflater();
         convertView = layoutInflater.inflate(R.layout.listview_test1, null);
+
+
         TextView textView = (TextView) convertView.findViewById(R.id.tvTest1);
         textView.setText(item[position]);
         return convertView;
